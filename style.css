@@ -1,0 +1,70 @@
+:root {
+  --button-color: #91ac27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  background-color: white;
+  margin: 50px 10%;
+  max-width: 2048px;
+  padding: 10px 40px;
+}
+
+.button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 6px 12px;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-color);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.link {
+  color: black;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  color: var(--button-colorq);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav > a {
+  border-bottom: 2px solid transparent;
+  padding: 15px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav > a:hover {
+  border-bottom: 2px solid #91ac27;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
