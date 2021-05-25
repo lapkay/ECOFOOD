@@ -27,7 +27,7 @@ body {
   padding: 10px 40px;
 }
 
-.button {
+.wrapper .button {
   background-color: var(--button-color);
   border: none;
   padding: 6px 12px;
@@ -37,32 +37,32 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: var(--button-color);
+.wrapper .button:hover {
+  background-color: #0b570b;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.link {
+.wrapper .link {
   color: black;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.link:hover {
-  color: var(--button-colorq);
+.wrapper .link:hover {
+  color: var(--button-color);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-nav > a {
+.wrapper nav > a {
   border-bottom: 2px solid transparent;
   padding: 15px 5px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-nav > a:hover {
+.wrapper nav > a:hover {
   border-bottom: 2px solid #91ac27;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
