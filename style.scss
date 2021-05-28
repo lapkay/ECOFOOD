@@ -11,8 +11,11 @@
 	font-size: 16px;
 }
 
-a{
+a {
 	text-decoration: none;
+}
+h2 {
+	width: 100%;
 }
 
 body {
@@ -25,7 +28,40 @@ body {
 	background-color: white;
 	margin: 50px 10%;
 	max-width: 2048px;
-	padding: 10px 40px;
+	padding: 60px 40px;
+
+	.header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		a {
+			flex-grow: 4;
+			text-align: start;
+		}
+
+		.links {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+
+			a {
+				flex-grow: 4;
+				text-align: center;
+			}
+
+			.link__1 {
+				margin: .4em 0;
+			}
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 40px;
+		}
+	}
 
 
 .button {
@@ -44,6 +80,8 @@ body {
 
 .link{
 	color: black;
+	margin-left: 12px;
+	margin-right: 12px;
 	transition: all 0.5s;
 
       &:hover{
@@ -62,4 +100,10 @@ nav > a{
    transition: all 0.5s;
       }
    }
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
