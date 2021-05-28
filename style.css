@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  width: 100%;
+}
+
 body {
   background: url(../img/bg.png) no-repeat center;
   background-size: cover;
@@ -24,7 +28,60 @@ body {
   background-color: white;
   margin: 50px 10%;
   max-width: 2048px;
-  padding: 10px 40px;
+  padding: 60px 40px;
+}
+
+.wrapper .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .header a {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  text-align: start;
+}
+
+.wrapper .header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.wrapper .header .links a {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  text-align: center;
+}
+
+.wrapper .header .links .link__1 {
+  margin: .4em 0;
+}
+
+.wrapper .header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .wrapper .button {
@@ -45,6 +102,8 @@ body {
 
 .wrapper .link {
   color: black;
+  margin-left: 12px;
+  margin-right: 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -66,5 +125,16 @@ body {
   border-bottom: 2px solid #91ac27;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
