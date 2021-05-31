@@ -14,8 +14,13 @@
 a {
 	text-decoration: none;
 }
+
 h2 {
+	font-weight: 500;
+	font-size: 0.825rem;
+	text-transform: uppercase;
 	width: 100%;
+	margin: 50px 0 10px 0;
 }
 
 body {
@@ -100,10 +105,81 @@ nav > a{
    transition: all 0.5s;
       }
    }
-}
+
 
 .products {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 20px;
+	margin-bottom: 25px;
+
+	article {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		.button--wide{
+			width: 100%;
+		}
+
+		.my-15 {
+		margin: 15px 0;
+		font-weight: 700;
+		font-size: 1.3rem;
+		}
+
+		h3 {
+			font-size: 1.75rem;
+			font-weight: 500;
+		}
+	}
 }
+
+.img-wrapper {
+	background-image: url(/img/empty-bg.jpg);
+
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 100px 25%;
+
+		p {
+			color: white;
+			font-weight: 600;
+			font-size: 1.5rem;
+
+			span {
+				text-transform: uppercase;
+			}
+		}
+
+		input[type="email"] {
+			padding: 4px;
+			}
+		}
+	}
+
+		footer {
+		display: flex;
+		flex-direction: column;
+
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			article {
+				width: 30%;
+			}
+		}
+
+		.links-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}
+
