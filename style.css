@@ -15,7 +15,11 @@ a {
 }
 
 h2 {
+  font-weight: 500;
+  font-size: 0.825rem;
+  text-transform: uppercase;
   width: 100%;
+  margin: 50px 0 10px 0;
 }
 
 body {
@@ -127,7 +131,103 @@ body {
   transition: all 0.5s;
 }
 
-.products {
+.wrapper .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.wrapper .products article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .products article .button--wide {
+  width: 100%;
+}
+
+.wrapper .products article .my-15 {
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.wrapper .products article h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.wrapper .img-wrapper {
+  background-image: url(/img/empty-bg.jpg);
+}
+
+.wrapper .img-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 100px 25%;
+}
+
+.wrapper .img-wrapper form p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.wrapper .img-wrapper form p span {
+  text-transform: uppercase;
+}
+
+.wrapper .img-wrapper form input[type="email"] {
+  padding: 4px;
+}
+
+.wrapper footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper footer section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper footer section article {
+  width: 30%;
+}
+
+.wrapper footer .links-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
