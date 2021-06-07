@@ -1,3 +1,5 @@
+@import "menu/menu";
+
 :root {
    --button-color: #91ac27;
 }
@@ -9,6 +11,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
+	box-sizing: border-box;
 }
 
 a {
@@ -27,6 +30,8 @@ body {
 	background: url(../img/bg.png) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
+	display: block;
+	justify-content: center;
 }
 
 .wrapper {
@@ -161,17 +166,37 @@ nav > a{
 		}
 	}
 
+		hr {
+			margin: 50px 0;
+		}
+
 		footer {
 		display: flex;
 		flex-direction: column;
+		margin: 30px 0 0 0;
+		align-items: center;
 
 		section {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			
+			gap: 15px;
 
 			article {
-				width: 30%;
+				min-width: 100px;
+				max-width: 200px;
+
+				h3 {
+					font-weight: 400;
+					font-size: 1.75rem;
+					text-align: center;
+					margin: 8px 0;
+
+					i {
+						font-size: 1.5rem;
+					}
+				}
 			}
 		}
 
@@ -179,7 +204,50 @@ nav > a{
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			margin: 50px 0;
+			vertical-align: middle;
+		}
+		}
+	}
+
+@media screen and (max-width:600px) {
+			body {
+				background-image: none;
+				width: 100%;
+				
+
+			.wrapper {
+				margin: 0;
+				padding: 5%;
+
+			header {
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 20px;
+
+				a {
+					margin-bottom: 20px;
+				}
+
+				nav {
+					display: none;
+				}
+		
+		.links {
+			width: 100%;
+			text-align: center;
+
+			a {
+				flex-grow: 0;
+			}
+				}
+			}
 		}
 	}
 }
+
+
+
+
+/*menu*/
 
